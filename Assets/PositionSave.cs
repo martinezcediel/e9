@@ -8,10 +8,15 @@ public class PositionSave : MonoBehaviour
     private float PlayerY;
     private float PlayerZ;
 
+    private float Contador;
+
     // Start is called before the first frame update
     void Start()
     {
         transform.position = new Vector3(PlayerPrefs.GetFloat("PlayerX"), PlayerPrefs.GetFloat("PlayerY"), PlayerPrefs.GetFloat("PlayerZ"));
+
+
+
     }
 
     // Update is called once per frame
